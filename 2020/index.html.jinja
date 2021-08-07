@@ -1,0 +1,24 @@
+{% extends "templates/base.html.jinja" %}
+
+{% block title %}2020 | Šifrovačka Julegåden{% endblock %}
+{% block heading %}<span id="year">2020</span>{% endblock %}
+
+{% block content %}
+  <h2>Šifry</h2>
+  <ol>
+    <li class="puzzle-link" id="puzzle-1"><a href="01">Štartová</a></li>
+    <li class="puzzle-link" id="puzzle-2"><a href="02">Poznáš Slovensko?</a></li>
+    <li class="puzzle-link" id="puzzle-3"><a href="03">Obesenec</a></li>
+    <li class="puzzle-link" id="puzzle-4"><a href="04">Autorádio</a></li>
+    <li class="puzzle-link" id="puzzle-5"><a href="05">Chemická</a></li>
+    <li class="puzzle-link" id="puzzle-6"><a href="06">Jazyková</a></li>
+    <li class="puzzle-link" id="puzzle-7"><a href="07">Pokus, omyl</a></li>
+    <li class="puzzle-link" id="puzzle-8"><a href="08">Fonetická</a></li>
+    <li class="puzzle-link" id="puzzle-9"><a href="09">Obrázková</a></li>
+    <li class="puzzle-link" id="puzzle-10"><a href="10">Záverečná</a></li>
+  </ol>
+{% endblock %}
+
+{% block scripts %}
+  <script src="/julegaden/js/load.js" type="module"></script>
+{% endblock %}

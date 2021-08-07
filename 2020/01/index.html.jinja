@@ -1,0 +1,19 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+
+{% block number %}1{% endblock %}
+{% block name %}Štartová{% endblock %}
+
+{% block puzzle %}
+  <p>Vitajte! Som rád, že ste sa rozhodli lúštiť tieto šifry, a chcem vám zaželať veselé Vianoce. Túto šifru určite vyriešite rýchlo, a keď budete mať ešte energiu, môžete rovno začať s ďalšou. Tak teda veľa šťastia!</p>
+{% endblock %}
+
+{% block key %}174621740{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      '“Nápovedu netreba, štartová šifra je jednoduchá!”'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "templates/base.html.jinja" %}
+
+{% block heading -%}
+  <span id="number">{% block number %}{% endblock %}</span>.
+  {% block name %}{% endblock %}
+{%- endblock %}
+
+{% block content %}
+  <h2>Riešenie</h2>
+  {% block solution %}{% endblock %}
+  <div class="pill-list">
+    <a class="pill" href="..">Zadanie</a>
+  </div>
+{% endblock %}

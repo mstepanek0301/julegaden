@@ -1,0 +1,33 @@
+{% extends "2019/templates/puzzle.html.jinja" %}
+
+{% block number %}5{% endblock %}
+{% block name %}Aké je heslo?{% endblock %}
+
+{% block styles %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block puzzle %}
+  <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 1.2em">
+    <b>No <i>veď</i> si <i>domysli!</b></i><br>
+		<i>Aké</i> asi?<br>
+		<b>Že <i>sa</b> vôbec</i> pýtaš!<br>
+		<b>Veď <i>to</b> je <b>jasné!</b></i><br>
+    <b>Fakt <i>to</b> nevieš?</i><br>
+		<i>Pošli!</i><br>
+		<i>Cez <b>Discord</i> alebo <i>Slack!</b></i>
+  </p>
+{% endblock %}
+
+{% block key %}685307031{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Určite ste si všimli zvláštne formátovanie textu, a možno aj to, že keďže v každom riadku sú najviac 4 slová, jeden riadok môže predstavovať písmeno a jedno slovo morseovkový znak (bodku alebo čiarku).\n\nOkrem toho sa treba pozrieť aj na obsah: väčšina textu nám síce zjavne nič nepovie, ale posledná veta vám môže pomôcť. Skúste zistiť, ako by ste vedeli zadanie napríklad v týchto aplikáciach prepísať. Potom už heslo budete mať naozaj skoro priamo pred sebou.'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+
+{% block number %}6{% endblock %}
+{% block name %}Jazyková{% endblock %}
+
+{% block puzzle %}
+  <figure>
+    <img src="index.svg">
+  </figure>
+{% endblock %}
+
+{% block key %}583762861{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Každý obrázok predstavuje jedno slovo, a čiary predstavujú súvislosť medzi slovami. Plná čiara je jeden druh súvislosti, a prerušovaná čiara iný druh.'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

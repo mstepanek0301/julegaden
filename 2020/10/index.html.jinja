@@ -1,0 +1,27 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+
+{% block number %}10{% endblock %}
+{% block name %}Záverečná{% endblock %}
+
+{% block puzzle %}
+  <p>Prvé slovo, tretie písmeno.<br>
+  Druhé slovo, piate písmeno.<br>
+  Tretie slovo, posledné písmeno.<br>
+  Štvrté slovo, druhé písmeno.<br>
+  Piate slovo, posledné písmeno.<br>
+  Šieste slovo, piate písmeno.<br>
+  Siedme slovo, prvé písmeno.<br>
+  Ôsme slovo, druhé písmeno.<br>
+  Deviate slovo, druhé písmeno.</p>
+{% endblock %}
+
+{% block key %}565972827{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Kde by sa dalo nájsť práve toľko slov, koľko od vás chce šifra? A ktoré by mohlo byť “prvé”?'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

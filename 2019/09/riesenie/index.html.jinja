@@ -1,0 +1,11 @@
+{% extends "2019/templates/solution.html.jinja" %}
+
+{% block number %}9{% endblock %}
+{% block name %}Stromová{% endblock %}
+
+{% block solution %}
+  <p>Písmenká sú z <a href="https://en.wikipedia.org/wiki/Snellen_chart">tejto grafiky</a>, ktorá sa používa pri očnej optike na zisťovanie údajov o zraku. Ak si takéto niečo vyhľadáte (vygooglite niečo ako "eye checking graphic" alebo podobné), zistíte, že väčšina týchto grafík má presne rovnaký formát (rovnaké písmená na rovnakých miestach).</p>
+  <p>Názov Stromová nás odkáže na použitie <a href="https://en.wikipedia.org/wiki/Morse_code#Alternative_display_of_common_characters_in_International_Morse_code">morseovkového stromu</a>. To, ku ktorému písmenu patrí aká postupnosť morseovkových znakov (alebo naopak), zistíme podľa toho, kde v strome sa dané písmeno nachádza. Niečo podobné platí aj o optickej grafike, lebo veľkosť písmena nám určuje riadok (posledné dva riadky majú skoro rovnakú veľkosť, preto sú písmená navyše posunuté hore alebo dole, aby sa dalo zistiť, ktorý riadok to je), a v každom riadku sú písmená rôzne (v jednom riadku sa síce nachádza dvakrát E, ale tam si môžeme výsledok domyslieť z kontextu), takže druh písmena nám určuje poradie v riadku. Dokonca majú dva obrázky aj relatívne podobný tvar, čiže smerom dole sa rozširujú.</p>
+  <p>Treba si všimnúť, z ktorých riadkov grafiky sú písmená použité v šifre. Ide o riadky dĺžky 2, 4, a 8 (z každej dĺžky jeden riadok okrem 8, kde sú tri riadky). V morseovkovom strome máme riadky dĺžky 2, 4, 8, a 16. Máme teda dosť priamočiary spôsob prevádzania týchto znakov: jednoducho zoberieme písmeno z riadku rovnakej dĺžky, ktoré je v rovnaké poradí (v rámci toho riadku). Problém je s riadkom dĺžky 16, ale ten vieme nahradiť dvoma riadkami dĺžky 8, a potom nám už počet riadkov presne sedí.</p>
+  <p>Keď teda prevedieme znaky (a tým pádom polohy) v grafike do morseovkového stromu, dostaneme heslo VODNÉ DIELO GABČÍKOVO. G síce v grafike vyzerá rovnako ako U, ale takéto nejasné písmeno je len jedno, a ľahko si vieme domyslieť, ktoré je to správne.</p>
+{% endblock %}

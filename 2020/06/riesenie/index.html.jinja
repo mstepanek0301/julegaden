@@ -1,0 +1,9 @@
+{% extends "2020/templates/solution.html.jinja" %}
+
+{% block number %}6{% endblock %}
+{% block name %}Jazyková{% endblock %}
+
+{% block solution %}
+  <p>Každý obrázok predstavuje jedno slovo. Slivka je doslova “slivka”, vlajky krajín predstavujú ich jazyky, a cieľová vlajka je heslo. Čiary vždy dávajú dve slová do nejakej súvislosti. Konkrétne plná čiara znamená, že majú slová rovnaký význam, a prerušovaná čiara, že v daných jazykoch rovnako znejú.</p>
+  <p>Na začiatku teda máme slovo “slivka”. To preložíme do češtiny, takže dostaneme “švestka”. Asi prvé zvukovo podobné nemecké slovo, ktoré nám napadne, je “Schwester” (sestra). Sestra sa po holandsky povie “zus” alebo “zuster”, pričom v tomto prípade chceme “zus”, aby sme vedeli pokračovať ďalej. V nemčine “süß” znamená sladký, po anglicky “sweet”. Slovenské slovo “svit” sa po anglicky povie “shine”. V slovenčine máme zase slovo “šajn”, ktoré sa síce ťažko dá preložiť presne, ale najbližšie je tomu asi holandské slovo “idee” (napríklad “nemám šajn” by sa dalo povedať ako “geen idee”, podobne ako po anglicky “no idea”). Ďalšie na rade je slovenské slovo “ide” (od slova ísť), ktoré sa po nemecky povie “geht” (od slova “gehen” v rovnakom tvare). Z toho chceme dostať nejaké anglické slovo, ktoré potom bude po slovensky heslo. Keďže heslo má byť podstatné meno, musí aj toto slovo byť podstatné meno, a najbližšie je asi “gate”, teda BRÁNA.</p>
+{% endblock %}

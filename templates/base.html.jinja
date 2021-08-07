@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/julegaden/css/theme.css">
+    {% block styles %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="content">
+        <a href="/julegaden"><h1 lang="da">Julegåden</h1></a>
+        {% block year %}{% endblock %}
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="content">
+        <h1><span>{% block heading %}{% endblock %}</span></h1>
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </body>
+  <script> // fix transition bug </script>
+  {% block scripts %}{% endblock %}
+</html>

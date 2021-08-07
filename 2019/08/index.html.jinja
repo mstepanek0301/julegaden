@@ -1,0 +1,27 @@
+{% extends "2019/templates/puzzle.html.jinja" %}
+
+{% block number %}8{% endblock %}
+{% block name %}Obrázková{% endblock %}
+
+{% block puzzle %}
+  <figure><img src="1.jpg"></figure>
+  <figure><img src="2.jpg"></figure>
+  <figure><img src="3.jpg"></figure>
+  <figure><img src="4.jpg"></figure>
+  <figure><img src="5.jpg"></figure>
+  <figure><img src="6.jpg"></figure>
+  <figure><img src="7.jpg"></figure>
+  <figure><img src="8.jpg"></figure>
+  <figure><img src="9.jpg"></figure>
+{% endblock %}
+
+{% block key %}349383474{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Rovnako ako v minulej šifre s obrázkami, aj tu je kľúčové obrázky správne pomenovať, aby sme z nich dostali písmená. Nemáme už ale doplňovačku, ktorá nám povie, ktoré písmená tvoria odpoveď, takže sa treba pohrať s pomenovaniami, a nájsť nejakú užitočnú spoločnú vlastnosť, pomocou ktorej písmená budeme vedieť určiť výsledné. Pomenovania niektorých obrázkov sú dosť priamočiare (tam si vlastnosť môžete všimnúť), s niektorými je súvislosť ďalekosiahlejšia, ale keď z ľahších obrázkov viete, čo hľadať, je to jednoduchšie.'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

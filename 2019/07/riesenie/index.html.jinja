@@ -1,0 +1,30 @@
+{% extends "2019/templates/solution.html.jinja" %}
+
+{% block number %}7{% endblock %}
+{% block name %}Nezastaviteľná{% endblock %}
+
+{% block solution %}
+<p>Máme tentokrát veľa textu, niečo ako príbeh. Text je rozdelený do niekoľkých odsekov s rovnakým formátom, teda za každým odsekom sú ešte nejaké dve čísla. Z toho by sa dalo očakávať, že z každého odseku dostaneme jedno písmeno.</p>
+<p>Na texte sa dá všimnúť veľa zaujímavých vlastností. Keďže ale chceme rovnaký princíp uplatniť na každý odsek, potrebujeme niečo, čo platí naozaj v každom odseku. Okrem toho je príbeh dosť prepracovaný a detailný, takže (na rozdiel od šifier 1 a 2) pôjde o nejakú vlastnosť súvisiacu s obsahom.</p>
+<p>To, že ide o príbeh hudobníka (aj sa tam veľakrát spomína hudba), a názov Nezastaviteľná, nás môže naviesť na pesničku Can't Stop, ktorú možno poznáte. Každý odsek odkazuje na jeden verš. No a z každého veršu vyberieme písmeno pomocou čisel za odsekom: prvé určuje, v koľkom slove sa písmeno nachádza, a druhé určuje, koľké písmeno z daného slova to je (apostrofy ignorujeme).</p>
+<p>Tu máme riešenia pre jednotlivé odseky:</p>
+<ol>
+  <li>Can't stop, addicted to the (s)hindig</li>
+  <li>Chop To(p), he says I'm gonna win big</li>
+  <li>Choose not a life of imitati(o)n</li>
+  <li>East side (l)overs living on the west end</li>
+  <li>G(o) write your message on the pavement</li>
+  <li>Use two sti(c)ks to make it in the nature</li>
+  <li>Smoke rings, I know you're going to blow on(e)</li>
+  <li>J. Butterfly is i(n) the treetops</li>
+  <li>Wait a minute, I'm pas(s)ing out</li>
+  <li>Win or lose, just li(k)e you</li>
+  <li>Ten more reasons why I need somebody new, just like (y)ou</li>
+  <li>T(h)is punk, the feeling that you stay for</li>
+  <li>In time I want to be y(o)ur best friend</li>
+  <li>(K)nocked out but boy, you better come to</li>
+  <li>Feel no need for any interf(e)ring</li>
+  <li>This life is more than (j)ust a readthrough</li>
+</ol>
+<p>Dostaneme teda heslo SPOLOČENSKÝ HOKEJ.</p>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+
+{% block number %}7{% endblock %}
+{% block name %}Pokus, omyl{% endblock %}
+
+{% block puzzle %}
+  <div id="chat-box"></div>
+{% endblock %}
+
+{% block key %}269007093{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Ak ste ešte neskúsili zadať žiadne heslo, nebojte sa toho. Ktoré slová sa šifre páčia? A ako ich pomenovať jedným slovom?'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="submit.js" type="module"></script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "2019/templates/puzzle.html.jinja" %}
+
+{% block number %}1{% endblock %}
+{% block name %}Uvítacia{% endblock %}
+
+{% block puzzle %}
+  <p>Halløj!</p>
+  <p>Jeg ønsker dig glædelig jul og byder dig velkommen til spillet! Denne gåde er meget let. Helt ærligt, ikke bekymere dig om sproget. Du behøver ikke engang at oversætte teksten. Det er dog på dansk, som dansk har det en interessant egenskab til dette spil.</p>
+  <p>Hvis du sidder fast, giv ikke op! Bare forlade skærmen og tage en pause. Nogle gange er det nyttigt at tage en pause et stykke tid, eller endda i flere dage. Når du spørger nogen anden, er det lettere at finde ud af adgangskoden.</p>
+  <p>Held og lykke, og have det sjovt med spillet! Jeg håber, du vil kunne lide det.</p>
+{% endblock %}
+
+{% block key %}522792114{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Text je v dánčine. Písať text po dánsky je výrazne ťažšie ako po slovensky alebo po anglicky, takže na to musí byť nejaký dobrý dôvod. Okrem toho text hovorí, že je dôležitá nejaká jeho vonkajšia vlastnosť. Čo je teda v dánčine také, čo by v slovenskom alebo anglickom texte určite nemohlo byť? A pokiaľ ide o to, ako z toho dostať heslo, skúste z toho dostať morseovku.'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

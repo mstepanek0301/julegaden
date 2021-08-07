@@ -1,0 +1,21 @@
+{% extends "2020/templates/solution.html.jinja" %}
+
+{% block number %}10{% endblock %}
+{% block name %}Záverečná{% endblock %}
+
+{% block solution %}
+  <p>Zadanie vyzerá veľmi jednoducho a priamočiaro, ale odkiaľ zobrať tých deväť slov? Ak ich zoberieme zo samotného zadania, nedostaneme nič zmysluplné. Možno vám napadne, že zatiaľ ste vyriešili práve deväť šifier, tak by to mohli byť ich heslá. Ak z nich ale zoberieme príslušné písmená, stále nič zmysluplné nevyjde.</p>
+  <p>V skutočnosti to je už skoro správne riešenie, ale slová treba zoradiť inak ako podľa poradia príslušných šifier, a to tak, že každé heslo spolu s nejakým poradím tvorí ustálené slovné spojenie. Takže máme:</p>
+  <ol>
+    <li>Prvý dojem</li>
+    <li>Alžbeta Druhá (anglická kráľovná)</li>
+    <li>Tretí svet (rozvojové krajiny)</li>
+    <li>Štvrtý rozmer</li>
+    <li>Piaty element (film)</li>
+    <li>Šiesty zmysel</li>
+    <li>Siedmy syn (film)</li>
+    <li>Ôsmy máj (sviatok, Deň víťazstva nad fašizmom)</li>
+    <li>Deviata brána (film)</li>
+  </ol>
+  <p>Niektoré poradia samy o sebe nie sú jednoznačné (napríklad môže byť aj druhý aj tretí svet, a máj a rozmer sú ešte univerzálnejšie), ale je len jeden spôsob, ako ich usporiadať, aby sedeli všetky. Teraz už dostaneme tajničku JETOTESÁR, a tým pádom máme záverečné heslo celej šifrovačky, TESÁR.</p>
+{% endblock %}

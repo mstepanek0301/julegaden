@@ -1,0 +1,19 @@
+{% extends "templates/base.html.jinja" %}
+
+{% block heading -%}
+  <span id="number">{% block number %}{% endblock %}</span>.
+  {% block name %}{% endblock %}
+{%- endblock %}
+
+{% block content %}
+  {% block puzzle %}{% endblock %}
+  <form id="submit-box" data-key="{% block key %}{% endblock %}">
+    <input type="text" id="submit-input" placeholder="Sem zadajte riešenie&hellip;">
+    <button type="submit"><i class="icon fi-rs-arrow-small-right"></i></button>
+  </form><br>
+  {% block actions %}{% endblock %}
+{% endblock %}
+
+{% block scripts %}
+  <script src="/julegaden/js/submit.js" type="module"></script>
+{% endblock %}

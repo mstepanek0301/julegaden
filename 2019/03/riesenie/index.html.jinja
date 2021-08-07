@@ -1,0 +1,10 @@
+{% extends "2019/templates/solution.html.jinja" %}
+
+{% block number %}3{% endblock %}
+{% block name %}Geografická{% endblock %}
+
+{% block solution %}
+  <p>Z názvu Geografická a formátu čísel v zadaní je asi dosť jasné, že ide o zemepisné súradnice. Keď súradnice skopírujeme do Google Maps, nájde nám to miesto na daných súradniciach. Zistíme teda, že všetky súradnice sú v Spojených štátoch, ale inak nemajú na prvý pohľad nič spoločné.</p>
+  <p>So samotnými číslami sa nedá urobiť nič, tak sa treba pozrieť na mapu v blízkosti tých miest. Keď sa popozeráme po okolí, uvidíme, že je vždy v blízkosti miesta nejaký zemepisný názov (väčšinou mesto, ale aj ulica/štvrť) prevzatý z nejakého iného miesta mimo Spojených štátov, konkrétne Budapest Road, Manchester (alebo York, ktorého je to súčasťou), Riga, Bombay, Bergen, a Melbourne. Názvy sú prevzaté postupne z Maďarska, Anglicka, Lotyšska, Indie, Nórska, a Austrálie. Keď zoberieme prvé písmená týchto krajín, dostaneme heslo MALINA.</p>
+  <p>Takýchto miest, ktorých názvy sú prevzaté z iných miest, je v USA dosť veľa, a ak vás to zaujíma, môžete si pozrieť <a href="https://en.wikipedia.org/wiki/List_of_U.S._places_named_for_non-U.S._places">ich zoznam</a>.</p>
+{% endblock %}

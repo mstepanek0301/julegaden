@@ -1,0 +1,64 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+
+{% block number %}9{% endblock %}
+{% block name %}Obrázková{% endblock %}
+
+{% block styles %}
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+      .no-break {
+      display: inline-flex;
+    }
+
+      .box {
+      display: inline-flex;
+      width: 1.2em;
+      height: 1.2em;
+      font-size: 4.5em;
+      line-height: 0.6em;
+      margin-right: 0.3em;
+      margin-bottom: 0.2em;
+      align-items: center;
+    }
+  </style>
+{% endblock %}
+
+{% block puzzle %}
+  <div class="container">
+    <img src="01.svg" class="box">
+    <img src="02.svg" class="box">
+    <img src="03.svg" class="box">
+    <img src="04.svg" class="box">
+    <img src="05.svg" class="box">
+    <img src="06.svg" class="box">
+    <div class="no-break"><img src="07.svg" class="box">
+    <div class="box">?</div></div>
+    <img src="08.svg" class="box">
+    <div class="no-break"><img src="09.svg" class="box">
+    <div class="box">,</div></div>
+    <img src="10.svg" class="box">
+    <img src="11.svg" class="box">
+    <img src="12.svg" class="box">
+    <img src="13.svg" class="box">
+    <img src="14.svg" class="box">
+    <div class="no-break"><img src="15.svg" class="box">
+    <div class="box">.</div></div>
+  </div>
+{% endblock %}
+
+{% block key %}30453157{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Obyčajná krížovka s tajničkou, a indície máte rovno v nej a v názve.'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

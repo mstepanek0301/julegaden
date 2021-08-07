@@ -1,0 +1,39 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+
+{% block number %}5{% endblock %}
+{% block name %}Chemická{% endblock %}
+
+{% block puzzle %}
+  <figure>
+    <img src="1.jpg">
+  </figure>
+  <figure>
+    <img src="2.jpg">
+  </figure>
+  <figure>
+    <img src="3.jpg">
+  </figure>
+  <figure>
+    <img src="4.jpg">
+  </figure>
+  <figure>
+    <img src="5.jpg">
+  </figure>
+  <figure>
+    <img src="4.jpg">
+  </figure>
+  <figure>
+    <img src="6.jpg">
+  </figure>
+{% endblock %}
+
+{% block key %}861465990{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Každý obrázok reprezentuje nejaký chemický prvok veľmi jednoduchým spôsobom. Pri poslednom obrázku sú vlastne dve možnosti, ale len z jednej vám vyjde zmysluplné riešenie.'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+
+{% block number %}2{% endblock %}
+{% block name %}Poznáš Slovensko?{% endblock %}
+
+{% block puzzle %}
+  <figure>
+    <img src="index.svg">
+  </figure>
+{% endblock %}
+
+{% block key %}452066649{% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button class="pill" onclick="window.alert(
+      'Obyčajná krížovka s tajničkou, a indície máte rovno v nej a v názve.'
+    )">Nápoveda</button>
+    <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+{% endblock %}

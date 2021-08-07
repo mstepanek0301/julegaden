@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-theme: Alata, sans-serif;
+
+  --color-white: white;
+  --color-black: #242526;
+  --color-red: #e00b12;
+  --color-light-red: #e34045;
+  --color-light-gray: #ced5db;
+  --color-pale-red: #e00b1232;
+
+  --content-width: 600px;
+  --box-height: 2.8rem;
+  --box-padding: 1.2rem;
+}
+
+body {
+  font-family: var(--font-theme);
+  font-size: 14px;
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+::selection {
+  color: currentColor;
+  background-color: var(--color-pale-red);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-red);
+}
+
+a:is(:hover, :focus) {
+  color: var(--color-light-red);
+}
+
+h1 {
+  font-size: 1.8em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+
+  transform: translateX(-2px);
+}
+
+h1::before {
+  --ring-size: 1.8em;
+  content: "";
+
+  background-color: var(--color-red);
+
+  flex-shrink: 0;
+  width: var(--ring-size);
+  height: var(--ring-size);
+
+  margin-right: 0.7em;
+  border-radius: calc(var(--ring-size) / 2);
+}
+
+h2 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+
+  color: var(--color-red);
+  margin: 1.4em 0 0.4em;
+}
+
+h2 + p {
+  margin-top: 0;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+ul {
+  list-style-type: "- ";
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.highlight {
+  margin-left: 1px;
+  border-left: 3.5px solid var(--color-red);
+  padding-left: 1em;
+}
+
+#submit-box {
+  color: var(--color-white);
+  background-color: var(--color-black);
+
+  display: inline-flex;
+
+  width: 18rem;
+  max-width: 100%;
+  height: var(--box-height);
+
+  margin: 1em 0;
+  border-radius: calc(var(--box-height) / 2);
+
+  transform: translateX(-2px);
+}
+
+#submit-box input {
+  font-family: var(--font-theme);
+  font-size: 0.95em;
+
+  color: inherit;
+  background-color: transparent;
+
+  flex-grow: 1;
+
+  border: none;
+  padding: 0 var(--box-padding);
+}
+
+#submit-box input:focus {
+  outline: none;
+}
+
+#submit-box button {
+  font-size: 1.5em;
+
+  color: var(--color-white);
+  background-color: var(--color-red);
+
+  width: var(--box-height);
+  height: var(--box-height);
+
+  border: none;
+  border-radius: calc(var(--box-height) / 2);
+  padding: 0;
+
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+#submit-box button:is(:hover, :focus) {
+  background-color: var(--color-light-red);
+  outline: none;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.icon::before {
+  line-height: var(--box-height) !important;
+}
+
+.pill {
+  font-family: var(--font-theme);
+  font-size: 0.95em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+  background-color: var(--color-red);
+
+  display: inline-flex;
+  align-items: center;
+
+  height: var(--box-height);
+
+  border: none;
+  border-radius: calc(var(--box-height) / 2);
+  padding: 0 var(--box-padding);
+
+  transition: background-color 0.1s ease-in-out;
+}
+
+.pill:is(:hover, :focus) {
+  color: var(--color-white);
+  background-color: var(--color-light-red);
+
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.pill-list {
+  display: flex;
+  margin: 1em 0;
+}
+
+#submit-box + br + .pill-list {
+  margin-top: 0;
+}
+
+.pill-list .pill {
+  margin-right: 0.5em;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.content {
+  width: var(--content-width);
+  max-width: 100%;
+
+  padding: 1.5rem 1.5rem 1.8rem;
+}
+
+header {
+  text-align: center;
+
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+header .content {
+  padding: 1rem 1.5rem 1rem;
+}
+
+header h1 {
+  font-size: 1.7em;
+  letter-spacing: 0.15em;
+
+  color: var(--color-white);
+  justify-content: center;
+  margin: 0.7em;
+}
+
+header h1::before {
+  transition: background-color 0.1s ease-in-out;
+}
+
+header h1:hover::before {
+  background-color: var(--color-light-red);
+  transition: background-color 0.1s ease-in-out;
+}
+
+header h2 {
+  font-size: 1.1em;
+  letter-spacing: 0.12em;
+
+  color: var(--color-white);
+  margin: 1.2em 0;
+}

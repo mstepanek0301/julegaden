@@ -1,0 +1,18 @@
+{% extends "2019/templates/solution.html.jinja" %}
+
+{% block number %}5{% endblock %}
+{% block name %}Aké je heslo?{% endblock %}
+
+{% block styles %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block solution %}
+  <p>Určite si hneď všimneme zvláštne formátovanie textu. Posledná veta nám navyše hovorí, že keď šifru nevieme vyriešiť, máme ju poslať cez Discord alebo Slack. Ak tieto aplikácie poznáte, asi viete, že <b style="font-family: 'IBM Plex Sans', sans-serif">tučné</b> písmo sa tam označuje ohraničením textu **dvoma hviezdičkami**, a <i style="font-family: 'IBM Plex Sans', sans-serif">kurzíva</i> *jednou hviezdičkou*. Podobný jazyk sa na formátovanie používa vo viacerých rôznych aplikáciach, a volá sa <a href="https://daringfireball.net/projects/markdown/syntax#em">Markdown</a>.</p>
+  <p>Vieme si teda zistiť, kde by boli hviezdičky. Text máme pekne oddelený do riadkov, takže z každého riadku by sme mohli dostať jedno písmeno. Každý riadok má 1 až 4 znaky, takže by z toho mohla byť morseovka, pričom jedna hviezdička môže byť bodka a dve hviezdičky čiarka. Treba si ešte uvedomiť, že riadky sú od seba oddelené, a teda hviezdičky za koncom vety sa nerátajú (to, čo tam je, sa totiž nedá ovplyvniť, slúži to len na zatvorenie zostávajúcich úsekov, a okrem toho morseovka má najviac 4 znaky na jedno písmeno). Dostaneme teda heslo BICYKEL.</p>
+
+  <h2>Iné riešenie</h2>
+  <p>Ak aj nepoznáte, ako sa robí formátovanie na Discorde alebo v Slacku, rovnako si môžeme všimnúť, že ide o morseovku. Navyše je na začiatku vždy buď práve tučné písmo, alebo práve kurzíva, a pri každom ďalšom slove sa práve jedna z týchto vlastností zmení. Pred každým slovom máme teda dva typy zmien: tučné písmo a kurzívu. Skúsime priradiť jednému typu bodky a druhému čiarky, a z jednej z možností nám vyjde správne riešenie.</p>
+{% endblock %}

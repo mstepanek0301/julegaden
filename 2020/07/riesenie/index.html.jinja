@@ -1,0 +1,11 @@
+{% extends "2020/templates/solution.html.jinja" %}
+
+{% block number %}7{% endblock %}
+{% block name %}Pokus, omyl{% endblock %}
+
+{% block solution %}
+  <p>Po niekoľkých pokusoch a omyloch nájdeme zopár slov, ktoré šifra pozná. Môžeme si všimnúť, že k takýmto slovám šifra často pozná aj súvisiace slová, a tieto súvisiace slová majú niekedy dokonca podobné ohodnotenie. Treba samozrejme veľa hádať, ale nakoniec sa dostaneme k slovám, ktoré nemajú žiadne zlé body, a to sú oheň, voda, zem, a vzduch, teda štyri základné elementy z alchýmie. Heslo je teda ELEMENT.</p>
+  <p>Podľa čoho ale šifra odpovedala na jednotlivé pokusy? Poznáte hru <a href="https://littlealchemy.com/">Little Alchemy</a> (alebo jednu z jej variácií)? Jej princíp je, že máte na začiatku tieto štyri elementy, a musíte z ich kombinácií vytvárať nové elementy. Slová z tejto šifry sú práve elementy z tejto hry.</p>
+  <p>Ich ohodnotenie je v podstate miera toho, aké ťažké je ich v hre získať. Presnejšie, štyri základné elementy majú hodnotu (počet zlých bodov) 0, a hodnota všetkých ostatných elementov je najmenšia taká, že na ich získanie stačí použiť elementy s menšou hodnotou.</p>
+  <p>Hodnoty boli automaticky vygenerované podľa <a href="https://www.ign.com/wikis/little-alchemy/Little_Alchemy_Cheats_-_List_of_All_Combinations">tejto tabuľky</a>.</p>
+{% endblock %}

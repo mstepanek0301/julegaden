@@ -1,0 +1,11 @@
+{% extends "2019/templates/solution.html.jinja" %}
+
+{% block number %}1{% endblock %}
+{% block name %}Uvítacia{% endblock %}
+
+{% block solution %}
+  <p>Máme nejaký text v cudzom jazyku, tak asi prvé, čo urobíme, je, že si ho preložíme. Ak aj nevieme, v akom jazyku je, Google Translate to vie uhádnuť automaticky. Zistíme teda, že text je v dánčine, a síce nám nepovie heslo, ale hovorí okrem nejakých všeobecných rád niekoľko podstatných vecí.</p>
+  <p>Jednak to, že text vlastne netreba prekladať. To znamená, že pri riešení šifry nás nezaujíma význam toho textu, ale nejaká vonkajšia vlastnosť. Ďalej text hovorí, že dánčina má nejakú zaujímavú vlastnosť pre túto hru.</p>
+  <p>Asi jedna z prvých vonkajších vlastností, ktoré si všimneme, sú dánske diakritické znaky: å, æ, ø. Máme teda nejaké tri znaky, čo nás môže naviesť na morseovku, keďže aj tá má tri znaky. A keď sa nad tým zamyslíme, v skutočnosti vieme tieto znaky previesť dosť priamočiaro: å je bodka (lebo "bodka" na a), ø je čiarka (lebo čiarka krížom cez o), a æ je oddeľovač (sú tam dve "oddelené" písmená).</p>
+  <p>Keď tieto znaky vyberieme z textu, prevedieme ich na morseovku, a tú potom preložíme, dostaneme heslo METER.</p>
+{% endblock %}
