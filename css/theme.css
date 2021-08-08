@@ -96,6 +96,7 @@ figure {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .highlight {
@@ -254,5 +255,5 @@ header h2 {
   letter-spacing: 0.12em;
 
   color: var(--color-white);
-  margin: 1.2em 0;
+  margin: 1em 0;
 }
