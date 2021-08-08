@@ -8,7 +8,8 @@
 {% block content %}
   {% block puzzle %}{% endblock %}
   <form id="submit-box" data-key="{% block key %}{% endblock %}">
-    <input type="text" id="submit-input" placeholder="Sem zadajte riešenie&hellip;">
+    <input type="text" id="submit-input" autocomplete="off"
+           placeholder="Sem zadajte riešenie&hellip;">
     <button type="submit"><i class="icon fi-rs-arrow-small-right"></i></button>
   </form><br>
   {% block actions %}{% endblock %}
