@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
 
 * {
   box-sizing: border-box;
@@ -10,6 +9,7 @@
 
   --color-white: white;
   --color-black: #242526;
+  --color-gray: #777b80;
   --color-red: #e00b12;
   --color-light-red: #e34045;
   --color-light-gray: #ced5db;
@@ -56,7 +56,7 @@ h1 {
 
 h1::before {
   --ring-size: 1.8em;
-  content: "";
+  content: '';
 
   background-color: var(--color-red);
 
@@ -80,12 +80,13 @@ h2 + p {
   margin-top: 0;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 2em;
 }
 
 ul {
-  list-style-type: "- ";
+  list-style-type: '- ';
 }
 
 figure {
@@ -100,9 +101,11 @@ img {
 }
 
 .highlight {
-  margin-left: 1px;
-  border-left: 3.5px solid var(--color-red);
-  padding-left: 1em;
+  color: var(--color-gray);
+}
+
+#hint {
+  margin-top: 1.4em;
 }
 
 #submit-box {
@@ -141,6 +144,10 @@ img {
 #submit-box button {
   font-size: 1.5em;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: var(--color-white);
   background-color: var(--color-red);
 
@@ -150,6 +157,7 @@ img {
   border: none;
   border-radius: calc(var(--box-height) / 2);
   padding: 0;
+  padding-bottom: 1px;
 
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
@@ -161,9 +169,14 @@ img {
   transition: background-color 0.1s ease-in-out;
 }
 
-.icon::before {
-  line-height: var(--box-height) !important;
+.icon {
+  width: calc(var(--box-height) / 2);
+  height: calc(var(--box-height) / 2);
 }
+
+/*.icon::before {
+  line-height: var(--box-height) !important;
+}*/
 
 .pill {
   font-family: var(--font-theme);
@@ -256,4 +269,26 @@ header h2 {
 
   color: var(--color-white);
   margin: 1em 0;
+}
+
+.big-button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3em;
+  padding: 0.5em;
+  margin-top: 0.4em;
+}
+
+.big-button:is(:hover, :focus) {
+  color: white;
+  background-color: var(--color-light-red);
+}
+
+.hidden {
+  display: none;
 }

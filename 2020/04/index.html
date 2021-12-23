@@ -30,17 +30,19 @@ Autorádio</span></h1>
   <form id="submit-box" data-key="484103798">
     <input type="text" id="submit-input" autocomplete="off"
            placeholder="Sem zadajte riešenie&hellip;">
-    <button type="submit"><i class="icon fi-rs-arrow-small-right"></i></button>
+    <button type="submit"><img class="icon" src="/julegaden/img/arrow-small-right.svg"></button>
   </form><br>
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Odkiaľ kam idú trasy? Netreba presné adresy, stačí približné pomenovanie miesta. Čo vám to pripomína? A keď chcete poskladať slovo, nezabúdajte, že v jednej trase sa spomína niečo špeciálne.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+  <div id="hint" class="hidden">
+  Odkiaľ kam idú trasy? Netreba presné adresy, stačí približné pomenovanie miesta. Čo vám to pripomína? A keď chcete poskladať slovo, nezabúdajte, že v jednej trase sa spomína niečo špeciálne.
   </div>
       </div>
     </div>
   </body>
   <script> // fix transition bug </script>
+  <script src="/julegaden/js/hint.js"></script>
   <script src="/julegaden/js/submit.js" type="module"></script>
 </html>

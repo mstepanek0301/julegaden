@@ -19,9 +19,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Odkiaľ kam idú trasy? Netreba presné adresy, stačí približné pomenovanie miesta. Čo vám to pripomína? A keď chcete poskladať slovo, nezabúdajte, že v jednej trase sa spomína niečo špeciálne.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  Odkiaľ kam idú trasy? Netreba presné adresy, stačí približné pomenovanie miesta. Čo vám to pripomína? A keď chcete poskladať slovo, nezabúdajte, že v jednej trase sa spomína niečo špeciálne.
 {% endblock %}

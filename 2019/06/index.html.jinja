@@ -13,9 +13,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Určite ste spoznali, že ide o doplňovačku s tajničkou, a ako indície k jednotlivým riadkom vám majú slúžiť obrázky. Ibaže názvy obrázkov tam zjavne nesedia, ani po slovensky, ani po anglicky. Ale možno sa s nimi bude dať urobiť ešte nejaká kombinácia týchto vecí. Skúste si teda obrázky pomenovať ešte raz a názvy si aj napíšte, môže vám to pomôcť.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Určite ste spoznali, že ide o doplňovačku s tajničkou, a ako indície k jednotlivým riadkom vám majú slúžiť obrázky. Ibaže názvy obrázkov tam zjavne nesedia, ani po slovensky, ani po anglicky. Ale možno sa s nimi bude dať urobiť ešte nejaká kombinácia týchto vecí. Skúste si teda obrázky pomenovať ešte raz a názvy si aj napíšte, môže vám to pomôcť.</p>
 {% endblock %}

@@ -11,9 +11,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      '“Nápovedu netreba, štartová šifra je jednoduchá!”'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>“Nápovedu netreba, štartová šifra je jednoduchá!”</p>
 {% endblock %}

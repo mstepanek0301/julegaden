@@ -11,13 +11,16 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Ak ste ešte neskúsili zadať žiadne heslo, nebojte sa toho. Ktoré slová sa šifre páčia? A ako ich pomenovať jedným slovom?'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
 {% endblock %}
 
 {% block scripts %}
   <script src="submit.js" type="module"></script>
+  <script src="/julegaden/js/hint.js" type="module"></script>
+{% endblock %}
+
+{% block hint %}
+  <p>Ak ste ešte neskúsili zadať žiadne heslo, nebojte sa toho. Ktoré slová sa šifre páčia? A ako ich pomenovať jedným slovom?</p>
 {% endblock %}

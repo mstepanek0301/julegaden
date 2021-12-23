@@ -14,9 +14,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Text je v dánčine. Písať text po dánsky je výrazne ťažšie ako po slovensky alebo po anglicky, takže na to musí byť nejaký dobrý dôvod. Okrem toho text hovorí, že je dôležitá nejaká jeho vonkajšia vlastnosť. Čo je teda v dánčine také, čo by v slovenskom alebo anglickom texte určite nemohlo byť? A pokiaľ ide o to, ako z toho dostať heslo, skúste z toho dostať morseovku.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Text je v dánčine. Písať text po dánsky je výrazne ťažšie ako po slovensky alebo po anglicky, takže na to musí byť nejaký dobrý dôvod. Okrem toho text hovorí, že je dôležitá nejaká jeho vonkajšia vlastnosť. Čo je teda v dánčine také, čo by v slovenskom alebo anglickom texte určite nemohlo byť? A pokiaľ ide o to, ako z toho dostať heslo, skúste z toho dostať morseovku.</p>
 {% endblock %}

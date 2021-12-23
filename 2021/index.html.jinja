@@ -1,0 +1,29 @@
+{% extends "templates/base.html.jinja" %}
+
+{% block title %}2021 | Šifrovačka Julegåden{% endblock %}
+{% block heading %}<span id="year">2021</span>{% endblock %}
+
+{% block content %}
+  <h2>Čo nás čaká</h2>
+  <ul>
+    <li>Na Nový rok nápovedy</li>
+    <li>Niekedy koncom prázdnin riešenia</li>
+  </ul>
+  <h2>Šifry</h2>
+  <ol>
+    <li class="puzzle-link" id="puzzle-1"><a href="01">Jazyk</a></li>
+    <li class="puzzle-link" id="puzzle-2"><a href="02">Farby</a></li>
+    <li class="puzzle-link" id="puzzle-3"><a href="03">Vláčik</a></li>
+    <li class="puzzle-link" id="puzzle-4"><a href="04">Slovník</a></li>
+    <li class="puzzle-link" id="puzzle-5"><a href="05">Fotky</a></li>
+    <li class="puzzle-link" id="puzzle-6"><a href="06">Nešifra</a></li>
+    <li class="puzzle-link" id="puzzle-7"><a href="07">Mapa</a></li>
+    <li class="puzzle-link" id="puzzle-8"><a href="08">Caesarovka</a></li>
+    <li class="puzzle-link" id="puzzle-9"><a href="09">Kalendár</a></li>
+    <li class="puzzle-link" id="puzzle-10"><a href="10">Pesničky</a></li>
+  </ol>
+{% endblock %}
+
+{% block scripts %}
+  <script src="/julegaden/js/load.js" type="module"></script>
+{% endblock %}

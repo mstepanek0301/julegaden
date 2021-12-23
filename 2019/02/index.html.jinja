@@ -15,9 +15,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Obsah textu je nejaký príbeh, ktorý nám k samotnej šifre zrejme nič nepovie. Pôjde tu teda tiež o nejakú vonkajšiu vlastnosť textu. Okrem toho, že text je o vlakoch, hovorí vám niečo názov? Skúste nájsť niečo zaujímavé v texte, s čím by sa to dalo spojiť a vytvoriť tak pravidlo, ktoré treba na vylúštenie využiť. A ak sa vám to nepodarí, skúste si v texte všimnúť nejaké podozrivé slová alebo vety, ktoré by tam pravdepodobne neboli, keby nemusela byť dodržaná táto vlastnosť. Niekde pri týchto slovách sa vlastnosť uplatňuje, takže tam ju najľahšie uvidíte.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Obsah textu je nejaký príbeh, ktorý nám k samotnej šifre zrejme nič nepovie. Pôjde tu teda tiež o nejakú vonkajšiu vlastnosť textu. Okrem toho, že text je o vlakoch, hovorí vám niečo názov? Skúste nájsť niečo zaujímavé v texte, s čím by sa to dalo spojiť a vytvoriť tak pravidlo, ktoré treba na vylúštenie využiť. A ak sa vám to nepodarí, skúste si v texte všimnúť nejaké podozrivé slová alebo vety, ktoré by tam pravdepodobne neboli, keby nemusela byť dodržaná táto vlastnosť. Niekde pri týchto slovách sa vlastnosť uplatňuje, takže tam ju najľahšie uvidíte.</p>
 {% endblock %}

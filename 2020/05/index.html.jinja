@@ -31,9 +31,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Každý obrázok reprezentuje nejaký chemický prvok veľmi jednoduchým spôsobom. Pri poslednom obrázku sú vlastne dve možnosti, ale len z jednej vám vyjde zmysluplné riešenie.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  Každý obrázok reprezentuje nejaký chemický prvok veľmi jednoduchým spôsobom. Pri poslednom obrázku sú vlastne dve možnosti, ale len z jednej vám vyjde zmysluplné riešenie.
 {% endblock %}

@@ -11,9 +11,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Text je otočený naopak, tak ho otočte, aby bol dobre. Dúfam, že nemáte problém s angličtinou.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Text je otočený naopak, tak ho otočte, aby bol dobre. Dúfam, že nemáte problém s angličtinou. Skutočný text tejto šifry sa dá nájsť na internete, takže ak poznáte nejaké jeho časti, skúste ho pohľadať.</p>
 {% endblock %}

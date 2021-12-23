@@ -11,9 +11,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Je toho zadaného veľmi málo, len 5 slov! To znamená, že z každého slova pravdepodobne dostaneme len jedno písmeno, a tie nám vytvoria heslo. Okrem toho to musí byť niečo jednoduché. Nesnažte sa ale vyberať písmená priamo zo slov. Skúste k slovám nezávisle priradiť nejaké písmená.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Je toho zadaného veľmi málo, len 5 slov! To znamená, že z každého slova pravdepodobne dostaneme len jedno písmeno, a tie nám vytvoria heslo. Okrem toho to musí byť niečo jednoduché. Nesnažte sa ale vyberať písmená priamo zo slov. Skúste k slovám nezávisle priradiť nejaké písmená.</p>
 {% endblock %}

@@ -22,17 +22,19 @@ Pokus, omyl</span></h1>
   <form id="submit-box" data-key="269007093">
     <input type="text" id="submit-input" autocomplete="off"
            placeholder="Sem zadajte riešenie&hellip;">
-    <button type="submit"><i class="icon fi-rs-arrow-small-right"></i></button>
+    <button type="submit"><img class="icon" src="/julegaden/img/arrow-small-right.svg"></button>
   </form><br>
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Ak ste ešte neskúsili zadať žiadne heslo, nebojte sa toho. Ktoré slová sa šifre páčia? A ako ich pomenovať jedným slovom?'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+  <div id="hint" class="hidden">
+  <p>Ak ste ešte neskúsili zadať žiadne heslo, nebojte sa toho. Ktoré slová sa šifre páčia? A ako ich pomenovať jedným slovom?</p>
   </div>
       </div>
     </div>
   </body>
   <script> // fix transition bug </script>
   <script src="submit.js" type="module"></script>
+  <script src="/julegaden/js/hint.js" type="module"></script>
 </html>

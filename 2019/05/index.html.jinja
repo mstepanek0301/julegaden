@@ -25,9 +25,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Určite ste si všimli zvláštne formátovanie textu, a možno aj to, že keďže v každom riadku sú najviac 4 slová, jeden riadok môže predstavovať písmeno a jedno slovo morseovkový znak (bodku alebo čiarku).\n\nOkrem toho sa treba pozrieť aj na obsah: väčšina textu nám síce zjavne nič nepovie, ale posledná veta vám môže pomôcť. Skúste zistiť, ako by ste vedeli zadanie napríklad v týchto aplikáciach prepísať. Potom už heslo budete mať naozaj skoro priamo pred sebou.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Určite ste si všimli zvláštne formátovanie textu, a možno aj to, že keďže v každom riadku sú najviac 4 slová, jeden riadok môže predstavovať písmeno a jedno slovo morseovkový znak (bodku alebo čiarku).\n\nOkrem toho sa treba pozrieť aj na obsah: väčšina textu nám síce zjavne nič nepovie, ale posledná veta vám môže pomôcť. Skúste zistiť, ako by ste vedeli zadanie napríklad v týchto aplikáciach prepísať. Potom už heslo budete mať naozaj skoro priamo pred sebou.</p>
 {% endblock %}

@@ -22,17 +22,19 @@ Písmenková</span></h1>
   <form id="submit-box" data-key="192606200">
     <input type="text" id="submit-input" autocomplete="off"
            placeholder="Sem zadajte riešenie&hellip;">
-    <button type="submit"><i class="icon fi-rs-arrow-small-right"></i></button>
+    <button type="submit"><img class="icon" src="/julegaden/img/arrow-small-right.svg"></button>
   </form><br>
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Je toho zadaného veľmi málo, len 5 slov! To znamená, že z každého slova pravdepodobne dostaneme len jedno písmeno, a tie nám vytvoria heslo. Okrem toho to musí byť niečo jednoduché. Nesnažte sa ale vyberať písmená priamo zo slov. Skúste k slovám nezávisle priradiť nejaké písmená.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+  <div id="hint" class="hidden">
+  <p>Je toho zadaného veľmi málo, len 5 slov! To znamená, že z každého slova pravdepodobne dostaneme len jedno písmeno, a tie nám vytvoria heslo. Okrem toho to musí byť niečo jednoduché. Nesnažte sa ale vyberať písmená priamo zo slov. Skúste k slovám nezávisle priradiť nejaké písmená.</p>
   </div>
       </div>
     </div>
   </body>
   <script> // fix transition bug </script>
+  <script src="/julegaden/js/hint.js"></script>
   <script src="/julegaden/js/submit.js" type="module"></script>
 </html>

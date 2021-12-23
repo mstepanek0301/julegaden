@@ -18,9 +18,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Názov Geografická a formát čísel vám napovie, že sú to zemepisné súradnice. Môžete ich teda skopírovať do Google Maps, ktoré vám miesto nájdu na mape. Okrem toho, že sú všetky v Spojených štátoch, majú ešte jednu dôležitú spoločnú vlastnosť. Ak ju nevidíte, popozerajte sa trochu v okolí miest. Keď túto vlastnosť odhalíte, heslo už získate pomerne jednoducho, stačí sa trochu pohrať s písmenami v tom, čo vám vyšlo.\n\nSkúste hľadať v čo najbližšom okolí miest, v trochu širšom okolí sa totiž niekedy dajú nájsť podobné veci. Pri prvom mieste to môže byť trochu ťažké, takže sa pozrite dôkladnejšie v tesnom okolí, alebo si písmeno domyslite, ak viete.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Názov Geografická a formát čísel vám napovie, že sú to zemepisné súradnice. Môžete ich teda skopírovať do Google Maps, ktoré vám miesto nájdu na mape. Okrem toho, že sú všetky v Spojených štátoch, majú ešte jednu dôležitú spoločnú vlastnosť. Ak ju nevidíte, popozerajte sa trochu v okolí miest. Keď túto vlastnosť odhalíte, heslo už získate pomerne jednoducho, stačí sa trochu pohrať s písmenami v tom, čo vám vyšlo.\n\nSkúste hľadať v čo najbližšom okolí miest, v trochu širšom okolí sa totiž niekedy dajú nájsť podobné veci. Pri prvom mieste to môže byť trochu ťažké, takže sa pozrite dôkladnejšie v tesnom okolí, alebo si písmeno domyslite, ak viete.</p>
 {% endblock %}

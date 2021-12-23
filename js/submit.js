@@ -6,12 +6,14 @@ const submitForm = document.getElementById('submit-box')
 submitForm.addEventListener('submit', event => {
   event.preventDefault()
   const input = document.getElementById('submit-input')
+  if (input.value == '') return
+
   const key = normalize(input.value)
   const hash = computeHash(key)
   const correct = Number(submitForm.dataset.key)
 
   if (hash === correct) {
-    saveKey(input.value)
+    saveKey(key)
     window.alert('Výborne, vyriešili ste šifru!')
     window.location.href += '/../..'
   } else {

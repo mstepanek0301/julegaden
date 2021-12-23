@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/julegaden/css/theme.css">
+    <link rel="icon" href="/julegaden/favicon.svg">
+  <style>
+    #map {
+      position: relative;
+    }
+    #card {
+      position: absolute;
+    }
+    #arrow {
+      position: relative;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-top: 5px solid var(--color-red);
+    }
+    .box {
+      position: relative;
+      background-color: var(--color-red);
+      color: var(--color-white);
+      padding: 0.5em 0.8em;
+    }
+    .card-text {
+      position: static;
+      text-align: center;
+    }
+  </style>
+    <title>7. Mapa | Julegåden 2021</title>
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="content">
+        <a href="/julegaden"><h1 lang="da">Julegåden</h1></a>
+  <a href="/julegaden/2021"><h2 id="year">2021</h2></a>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="content">
+        <h1><span><span id="number">7</span>.
+Mapa</span></h1>
+  <div id="map">
+    <img src="map.svg">
+    <div id="card">
+      <div class="box">
+        <div class="card-text" id="card-name"></div>
+        <div class="card-text" id="card-value"></div>
+      </div>
+      <div id="arrow"></div>
+    </div>
+  </div>
+  <form id="submit-box" data-key="364638365">
+    <input type="text" id="submit-input" autocomplete="off"
+           placeholder="Sem zadajte riešenie&hellip;">
+    <button type="submit"><img class="icon" src="/julegaden/img/arrow-small-right.svg"></button>
+  </form><br>
+  <div id="hint" class="hidden">
+  </div>
+      </div>
+    </div>
+  </body>
+  <script> // fix transition bug </script>
+    <script src="/julegaden/js/hint.js"></script>
+  <script src="/julegaden/js/submit.js" type="module"></script>
+
+  <script src="index.js" type="module"></script>
+</html>

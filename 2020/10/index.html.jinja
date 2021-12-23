@@ -19,9 +19,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Kde by sa dalo nájsť práve toľko slov, koľko od vás chce šifra? A ktoré by mohlo byť “prvé”?'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Kde by sa dalo nájsť práve toľko slov, koľko od vás chce šifra? A ktoré by mohlo byť “prvé”?</p>
 {% endblock %}

@@ -18,7 +18,7 @@
       <div class="content">
         <h1><span><span id="number">7</span>.
 Nezastaviteľná</span></h1>
-  <p class="highlight">Udalosti popísané v tejto šifre sú fiktívne. Akákoľvek podobnosť so skutočnými udalosťami je čisto náhodná. Riešenie je slovné spojenie.</p>
+  <p class="highlight">Text tejto šifry slúži na jej vyriešenie a prípadné pobavenie. Udalosti popísané v texte sú vymyslené. Prosím, neberte ho príliš vážne :)</p>
   <p>Ahojte, volám sa Šimon a chodím do kvinty na GJH. Mám veľmi rád hudbu a už aj sám skladám a nahrávam pesničky, teda vlastne s pomocou hlavne Tibiho a občas aj nejakých ďalších ľudí. Ale nie je to len o hudbe, patrí k tomu aj celý ten životný štýl. Napríklad to, že som si dal spraviť dredy, alebo veľa našich spoločných mimoškolských aktivít s ľuďmi zo školy. Občas sú s tým trochu problémy, hlavne s učiteľmi, ale inak fakt super pocit. Skoro akoby som na tom už bol závislý, s tým sa už nedá prestať. 6, 1</p>
   <p>Ešte si spomínam na našu prvú spoločnú pesničku, Geometrické telesá. To sme robili ešte s Tibim, Miškom, a Tonym. Vzniklo to pôvodne ako projekt na matiku, napísal som text, našli sme k tomu nejakú hudbu na internete, dali sme to dokopy, a na hodine sme to predviedli. No a vtedy sa to všetkým dosť páčilo, dokonca aj učiteľke. Povedala, že z tých projektov, čo boli, tak tento náš bol najlepší. Na konci roka sme mali akadémiu, teda takú akciu v Dome kultúry, kde bol v podstate celý druhý stupeň, a ona nám vybavila, že to tam môžeme zahrať. To sa nám fakt podarilo. 2, 3</p>
   <p>Toto celé mi nejak dodalo odvahu, aby som začal robiť vlastnú hudbu. Slovenský hip-hop som síce počúval už dlho, ale aj keď som vždy chcel robiť aj vlastnú hudbu, nikdy som sa do toho nevedel pustiť. Akurát som spieval pesničky od iných rapperov. Potom som si ale uvedomil, že to nie je cesta, tak som začal písať vlastné texty, a celkom dosť mi to išlo. Vďaka tomu som sa teda dostal tam, kde som teraz, to bolo teda dosť dôležité. 6, 8</p>
@@ -38,17 +38,19 @@ Nezastaviteľná</span></h1>
   <form id="submit-box" data-key="68057657">
     <input type="text" id="submit-input" autocomplete="off"
            placeholder="Sem zadajte riešenie&hellip;">
-    <button type="submit"><i class="icon fi-rs-arrow-small-right"></i></button>
+    <button type="submit"><img class="icon" src="/julegaden/img/arrow-small-right.svg"></button>
   </form><br>
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Šifra obsahuje niekoľko opakujúcich sa častí s rovnakým formátom, teda vždy odsek a za ním dve čísla. To znamená, že z každej tejto časti dostaneme jedno písmeno a tie nám potom vytvoria heslo. Postup, ktorým získavate heslo, teda musí byť taký, že funguje naozaj na všetky časti. Okrem toho je príbeh dosť detailný, takže pôjde o jeho obsah, nie nejakú vonkajšiu vlastnosť (ako pri šifrách 1 a 2). Všimnite si celkovú tému textu, napríklad to, že sa tam pomerne často spomína hudba, a aj pomerne zvláštny názov. Ten je pre šifru úplne kľúčový. Takisto vám môžu pomôcť aj niektoré konkrétne vety z textu. Nie sú vám trochu povedomé?'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
+  </div>
+  <div id="hint" class="hidden">
+  <p>Šifra obsahuje niekoľko opakujúcich sa častí s rovnakým formátom, teda vždy odsek a za ním dve čísla. To znamená, že z každej tejto časti dostaneme jedno písmeno a tie nám potom vytvoria heslo. Postup, ktorým získavate heslo, teda musí byť taký, že funguje naozaj na všetky časti. Okrem toho je príbeh dosť detailný, takže pôjde o jeho obsah, nie nejakú vonkajšiu vlastnosť (ako pri šifrách 1 a 2). Všimnite si celkovú tému textu, napríklad to, že sa tam pomerne často spomína hudba, a aj pomerne zvláštny názov. Ten je pre šifru úplne kľúčový. Takisto vám môžu pomôcť aj niektoré konkrétne vety z textu. Nie sú vám trochu povedomé?</p>
   </div>
       </div>
     </div>
   </body>
   <script> // fix transition bug </script>
+  <script src="/julegaden/js/hint.js"></script>
   <script src="/julegaden/js/submit.js" type="module"></script>
 </html>

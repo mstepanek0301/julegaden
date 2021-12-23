@@ -13,9 +13,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Obyčajná krížovka s tajničkou, a indície máte rovno v nej a v názve.'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  Obyčajná krížovka s tajničkou, a indície máte rovno v nej a v názve.
 {% endblock %}

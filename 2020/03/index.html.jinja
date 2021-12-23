@@ -16,9 +16,11 @@
 
 {% block actions %}
   <div class="pill-list">
-    <button class="pill" onclick="window.alert(
-      'Z hier spomenutých v texte je podstatný len Obesenec. Ako súvisí s touto šifrou?'
-    )">Nápoveda</button>
+    <button id="hint-button" class="pill">Nápoveda</button>
     <a class="pill" href="riesenie">Riešenie</a>
   </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Z hier spomenutých v texte je podstatný len Obesenec. Ako súvisí s touto šifrou?</p>
 {% endblock %}

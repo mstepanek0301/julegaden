@@ -1,0 +1,7 @@
+{% extends "templates/puzzle.html.jinja" %}
+
+{% block title %}{{ self.number() }}. {{ self.name() }} | Julegåden 2021{% endblock %}
+
+{% block year %}
+  <a href="/julegaden/2021"><h2 id="year">2021</h2></a>
+{% endblock %}

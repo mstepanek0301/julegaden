@@ -10,11 +10,15 @@
   <form id="submit-box" data-key="{% block key %}{% endblock %}">
     <input type="text" id="submit-input" autocomplete="off"
            placeholder="Sem zadajte riešenie&hellip;">
-    <button type="submit"><i class="icon fi-rs-arrow-small-right"></i></button>
+    <button type="submit"><img class="icon" src="/julegaden/img/arrow-small-right.svg"></button>
   </form><br>
   {% block actions %}{% endblock %}
+  <div id="hint" class="hidden">
+    {% block hint %}{% endblock %}
+  </div>
 {% endblock %}
 
 {% block scripts %}
+  <script src="/julegaden/js/hint.js"></script>
   <script src="/julegaden/js/submit.js" type="module"></script>
 {% endblock %}
