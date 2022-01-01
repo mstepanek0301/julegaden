@@ -50,3 +50,13 @@
   {{ super() }}
   <script src="index.js" type="module"></script>
 {% endblock %}
+
+{% block actions %}
+  <div class="pill-list">
+    <button id="hint-button" class="pill">Nápoveda</button>
+  </div>
+{% endblock %}
+
+{% block hint %}
+  <p>Čo majú tieto mestá spoločné a ako sa podľa toho bude merať vzdialenosť?</p>
+{% endblock %}
