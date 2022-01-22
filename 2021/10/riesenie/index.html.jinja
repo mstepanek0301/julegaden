@@ -1,0 +1,21 @@
+{% extends "2021/templates/solution.html.jinja" %}
+
+{% block number %}10{% endblock %}
+{% block name %}Pesničky{% endblock %}
+
+{% block solution %}
+  <p>Každá pesnička predstavuje jednu z ostatných deviatich šifier, jej text nejakým spôsobom odkazuje na zadanie alebo riešenie šifry. Okrem toho je v texte každej pesničky (aj keď nie nutne v časti, ktorá je tu použitá) heslo príslušnej šifry.</p>
+  <p>Tu máme úseky z pesničiek, ktoré trvajú vždy nejaký násobok 10 sekúnd. Podľa toho, koľko desiatok to je, vieme zobrať toľké písmeno z hesla, ktoré patrí k danej pesničke. Napríklad prvá pesnička tu má 40 = 4×10 sekúnd, berieme teda štvrté písmeno. Riešenia pre jednotlivé pesničky sú:</p>
+  <ol>
+    <li>Ľudia nie sú zlí (IMT Smile) – NIE sú – Nešifra – POD(N)ÁJOM</li>
+    <li>Ozajstný hip-hop (Xavier Baumaxa) – “vieš čo je to, keď nasprejuješ vagón plný uhľá a oni jej potom preklopia?” – sprejovanie, graffiti – Fotky – UHLI(E)</li>
+    <li>Komplikovaná (Polemic) – cudzie slová, “na pomoc slovník musiš brať” – Slovník – KA(S)KADÉR</li>
+    <li>Jede jede mašinka (Maxim Turbulenc) – Vláčik – SPR(I)EVODCA</li>
+    <li>Neviem byť sám (Elán) – “na tričku nosím dúhový nápis” – Farby – T(E)LEFÓN</li>
+    <li>Pár dní (Desmod) – Kalendár – K(M)EŇ</li>
+    <li>Od Čadce k Dunaju (Karel Kryl) – rozdelenie Česka a Slovenska – Jazyk – (V)IEDEŇ</li>
+    <li>Ievan Polkka (Loituma) – nezrozumiteľná hatlanina – Caesarovka – L(Á)SKA</li>
+    <li>Loď do neznáma – “lodi, ktorá pláva do neznáma, rieka zablúdiť nedovolí”, “naša loď sa k moru doplaví” – Mapa – (M)ORE</li>
+  </ol>
+  <p>Dostaneme tajničku “nesiem vám,” k čomu doplníme heslo NOVINY.</p>
+{% endblock %}

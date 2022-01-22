@@ -1,0 +1,21 @@
+{% extends "2021/templates/solution.html.jinja" %}
+
+{% block number %}6{% endblock %}
+{% block name %}Nešifra{% endblock %}
+
+{% block solution %}
+  <p>Šifra má formát ako indície v krížovke. Všetky sú v tvare “X, čo nie Y.”  Všetky sa dajú pomenovať slovami, ktoré začínajú na “ne-” s tým, že X predstavuje celé slovo a Y predstavuje časť slova bez “ne-”. Čísla nám povedia, koľké písmeno z akého celkového počtu chceme zobrať. Riešenia pre jednotlivé riadky sú:</p>
+
+  <ol>
+    <li>nestrieľať – nepáliť – NE(P)ÁL</li>
+    <li>matematická olympiáda – MO – NEM(O)</li>
+    <li>chyba – vada – NEVA(D)A</li>
+    <li>bunda bez rukávov – vesta – (N)EVESTA</li>
+    <li>manželka Trumana – Bess Trumanová – NEBES(Á)</li>
+    <li>trigonometrická funkcia – tangens – tan; internetový vyhľadávač – Yahoo; spolu teda ne-tan-yahoo – NETAN(J)AHU</li>
+    <li>hranice – medze – ne-medz-ko – NEMECK(O)</li>
+    <li>futbalista – Messi – NE(M)ESIS</li>
+  </ol>
+
+  <p>Riešenie je teda PODNÁJOM.</p>
+{% endblock %}

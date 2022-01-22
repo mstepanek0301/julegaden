@@ -104,6 +104,12 @@ img {
   color: var(--color-gray);
 }
 
+blockquote {
+  margin-left: 0;
+  border-left: 4px solid var(--color-red);
+  padding-left: 1.5em;
+}
+
 #hint {
   margin-top: 1.4em;
 }

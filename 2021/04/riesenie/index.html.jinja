@@ -1,0 +1,27 @@
+{% extends "2021/templates/solution.html.jinja" %}
+
+{% block number %}4{% endblock %}
+{% block name %}Slovník{% endblock %}
+
+{% block solution %}
+  <p>Slová nahradíme cudzími slovami, ktoré znamenajú to isté. V každom riadku budú slová s rovnakým základom a rôznymi predponami:</p>
+
+  <blockquote>
+    <p>disponovať, exponovať, imponovať, KOMPONOVAŤ, oponovať, postponovať, proponovať, transponovať</p>
+    <p>APLIKÁCIA, explikácia, implikácia, komplikácia, multiplikácia, replikácia</p>
+    <p>atrakcia, distrakcia, extrakcia, kontrakcia, retrakcia (*1), SUBTRAKCIA</p>
+    <p>demisia, emisia, KOMISIA, omisia, permisia, submisia, transmisia</p>
+    <p>AVERZIA, inverzia, konverzia, kontroverzia, perverzia, subverzia</p>
+    <p>DEPRESIA, expresia, impresia, kompresia, opresia/represia, supresia</p>
+    <p>ašpriovať, EXPIROVAŤ (*2), inšpirovať, konšpirovať, perspirovať (*3), respirovať (*4)</p>
+    <p>abdukcia, dedukcia, indukcia, introdukcia, kondukcia, produkcia, REDUKCIA</p>
+  </blockquote>
+
+  <p>Keď zoberieme prvé písmená zo slov s veľkými písmenami, dostaneme heslo KASKADÉR.</p>
+
+  <h2>Poznámky</h2>
+  <p>(*1) V slovenčine sa moc nepoužíva, ale v angličtine napríklad “retract a previous statement” znamená “odvolať predošlé tvrdenie.”</p>
+  <p>(*2) Ojedinele sa píše aj “exspirácia.”</p>
+  <p>(*3) Od toho je odvodené napríklad “antiperspirant”</p>
+  <p>(*4) Od toho je odvodené napríklad “respirátor” alebo “respiračné ochorenia”</p>
+{% endblock %}

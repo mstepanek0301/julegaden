@@ -1,0 +1,19 @@
+{% extends "2021/templates/solution.html.jinja" %}
+
+{% block number %}8{% endblock %}
+{% block name %}Caesarovka{% endblock %}
+
+{% block solution %}
+  <p>Je to ako Caesarova šifra, ale namiesto písmen používame hlásky, teda to, čo vyslovujeme. Napríklad “ch” je jedna hláska, ale píše sa dvomi písmenami, zatiaľčo “x” sú dve hlásky /ks/, ale píšu sa jedným písmenom. “y” predstavuje hlásku “i”.</p>
+  <p>Aby sa dal text prečítať aj po posune, musia sa v ňom rozumne striedať samohlásky a spoluhlásky. Tie sa teda posúvajú osobitne. Navyše sa ešte osobitne posúvajú krátke a dlhé samohlásky a dvojhlásky (ia, ie, iu, ô).</p>
+
+  <p>Tu je pôvodný text (napísaný foneticky):</p>
+  <blockquote>
+    <p>Ahojťe! Ak sťe už toto rozlúštili, asi bi sťe chceli veďieť heslo, že? Ja teda ňeviem, odkiaľ ľuďia heslo berú, ale môžem vám o ňom povedať nasledovné:</p>
+    <p>Heslo dokáže spôsobiť presun pohorí, zaťiaľčo samo bíva presúvané cez tráviacu sústavu. Okrem toho môže šancu na prítomnosť hesla zvíšiť ňeúspech pri hazardních hrách. Heslo nadobúda veľké množstvo rôznich foriem, je však ňeochotné prezentovať sa v poškoďenom stave.</p>
+    <p>Tak čo? Vieťe ho už aj vi?</p>
+  </blockquote>
+  <p>Toto bolo automaticky preložené <a href="https://github.com/mstepanek0301/julegaden/blob/master/2021/08/riesenie/index.py">týmto programom</a>.</p>
+
+  <p>Vyriešením hádanky dostaneme heslo LÁSKA. V texte sú na to referencie: “láska, bože, láska, kde ťa ľudia berú,” “láska hory prenáša,” “láska prechádza cez žalúdok,” “nešťastie v kartách – šťastie v láske,” “láska má veľa podôb; nechce sa ukázať zranená.”</p>
+{% endblock %}
